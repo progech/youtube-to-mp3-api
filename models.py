@@ -1,22 +1,18 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
-
 
 class Thumbnail(BaseModel):
     url: str
-    width: int
-    height: int
-
+    width: Optional[int]
+    height: Optional[int]
 
 class RichThumbnail(BaseModel):
     url: str
-    width: int
-    height: int
-
+    width: Optional[int]
+    height: Optional[int]
 
 class DescriptionSnippet(BaseModel):
-    text: str
-
+    text: Optional[str]
 
 class Channel(BaseModel):
     name: str
@@ -24,11 +20,9 @@ class Channel(BaseModel):
     thumbnails: List[Thumbnail]
     link: str
 
-
 class ViewCount(BaseModel):
-    text: str
-    short: str
-
+    text: Optional[str]
+    short: Optional[str]
 
 class Video(BaseModel):
     type: str
@@ -41,6 +35,6 @@ class Video(BaseModel):
     richThumbnail: RichThumbnail
     descriptionSnippet: List[DescriptionSnippet]
     channel: Channel
-    accessibility: dict
+    accessibility: Optional[dict]
     link: str
-    shelfTitle: str
+    shelfTitle: Optional[str]
