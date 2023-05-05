@@ -163,4 +163,5 @@ cython_debug/
 
 .space
 #rm docker
-Dockerfile*
+Dockerfile
+docker/
