@@ -1,8 +1,7 @@
-from typing import List
 from fastapi import FastAPI, HTTPException
-from youtubesearchpython.__future__ import Search, VideosSearch
+from youtubesearchpython.__future__ import VideosSearch
 from async_lru import alru_cache
-# from models import Video, Thumbnail, RichThumbnail, DescriptionSnippet, Channel, ViewCount
+
 
 app = FastAPI()
 
