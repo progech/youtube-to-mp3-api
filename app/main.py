@@ -11,7 +11,7 @@ origins = [
     # "http://localhost:3000",
     # "https://yourdomain.com",
     # "https://www.yourdomain.com",
-    "https://ytguru.vercel.app/"
+    "https://ytguru.vercel.app"
 ]
 
 app.add_middleware(
