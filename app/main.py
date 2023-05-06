@@ -7,10 +7,11 @@ from fastapi.exceptions import HTTPException
 app = FastAPI()
 
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "https://yourdomain.com",
-    "https://www.yourdomain.com",
+    # "http://localhost",
+    # "http://localhost:3000",
+    # "https://yourdomain.com",
+    # "https://www.yourdomain.com",
+    "https://ytguru.vercel.app/"
 ]
 
 app.add_middleware(
